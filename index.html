@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abood - Computer Science, UNM Malaysia</title>
+<meta name="description" content="Portfolio of Abood, a Computer Science undergraduate at the University of Nottingham Malaysia working on optimization, computer vision, and applied AI.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <circle cx="13" cy="13" r="2.4" fill="#4F8F72"/>
+        <circle cx="4" cy="6" r="1.6" fill="#5D6FA6" opacity="0.8"/>
+        <circle cx="22" cy="5" r="1.6" fill="#4F8F72" opacity="0.6"/>
+        <circle cx="21" cy="21" r="1.6" fill="#5D6FA6" opacity="0.7"/>
+        <circle cx="3" cy="20" r="1.6" fill="#4F8F72" opacity="0.5"/>
+        <line x1="4" y1="6" x2="13" y2="13" stroke="#4F8F72" stroke-width="0.7" opacity="0.4"/>
+        <line x1="22" y1="5" x2="13" y2="13" stroke="#5D6FA6" stroke-width="0.7" opacity="0.4"/>
+        <line x1="21" y1="21" x2="13" y2="13" stroke="#4F8F72" stroke-width="0.7" opacity="0.4"/>
+        <line x1="3" y1="20" x2="13" y2="13" stroke="#5D6FA6" stroke-width="0.7" opacity="0.4"/>
+      </svg>
+      Abood
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume_sl.pdf" class="nav-cta" target="_blank" rel="noopener">Resume ↓</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container hero">
+    <div>
+      <p class="eyebrow">Computer Science · University of Nottingham Malaysia · Class of 2027</p>
+      <h1>Hi, I'm Abood.</h1>
+      <p class="lede">I build a wide variety of software, ranging from optimization algorithms and computer vision pipelines to interactive games. Always looking for the next complex technical challenge.</p>
+      <div class="btn-row">
+        <a href="projects.html" class="btn btn-primary">View projects</a>
+        <a href="contact.html" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <canvas id="converge-canvas" role="img" aria-label="Animated illustration of scattered particles periodically converging, representing optimization algorithms finding a solution"></canvas>
+      <div class="visual-caption">particles seeking a minimum — like PSO algorithm does</div>
+    </div>
+  </div>
+
+  <div class="container section-tight">
+    <p class="eyebrow">Also thinking about</p>
+    <div class="pill-row">
+      <span class="pill">Formula 1</span>
+      <span class="pill">Calisthenics</span>
+      <span class="pill">Geopolitics</span>
+      <span class="pill">Cybersecurity</span>
+    </div>
+  </div>
+
+  <section class="container">
+    <p class="eyebrow">Selected work</p>
+    <h2>Three problems, three searches for a better answer.</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-status status-progress">In progress · FYP</span>
+        <h3>Smart Grid Congestion via PSO</h3>
+        <p>A particle swarm optimization approach to easing AMI network congestion during post-outage mass reconnection.</p>
+        <div class="pill-row">
+          <span class="pill pill-signal">PSO</span>
+          <span class="pill pill-signal">Smart Grid</span>
+        </div>
+        <a href="projects.html#fyp" class="card-link">Read more →</a>
+      </div>
+      <div class="card">
+        <span class="card-status">Completed · SEGP</span>
+        <h3>Oral AI</h3>
+        <p>A multi-model medical computer vision pipeline for oral health analysis, with RAG-generated clinical reports.</p>
+        <div class="pill-row">
+          <span class="pill pill-indigo">Computer Vision</span>
+          <span class="pill pill-indigo">RAG</span>
+        </div>
+        <a href="projects.html#oral-ai" class="card-link">Read more →</a>
+      </div>
+      <div class="card">
+        <span class="card-status">Completed · Software Engineering</span>
+        <h3>M4TCH</h3>
+        <p>A fast-paced tile-matching game engineered for desktop using Java (libGDX).</p>
+        <div class="pill-row">
+          <span class="pill pill-signal">Java</span>
+          <span class="pill pill-signal">Gradle</span>
+        </div>
+        <a href="projects.html#m4tch" class="card-link">Read more →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="converge-divider">
+      <svg width="140" height="20" viewBox="0 0 140 20" fill="none">
+        <circle cx="8" cy="4" r="2" fill="#4F8F72" opacity="0.5"/>
+        <circle cx="30" cy="14" r="1.6" fill="#5D6FA6" opacity="0.5"/>
+        <circle cx="55" cy="7" r="1.8" fill="#4F8F72" opacity="0.6"/>
+        <circle cx="70" cy="10" r="2.4" fill="#4F8F72"/>
+        <circle cx="88" cy="6" r="1.8" fill="#5D6FA6" opacity="0.6"/>
+        <circle cx="112" cy="15" r="1.6" fill="#4F8F72" opacity="0.5"/>
+        <circle cx="132" cy="5" r="2" fill="#5D6FA6" opacity="0.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <section class="container">
+    <p class="eyebrow">Toolset</p>
+    <h2>What I build with.</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4>Computer Vision</h4>
+        <ul><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>ResNet / DenseNet</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Optimization</h4>
+        <ul><li>DEAP</li><li>Genetic Algorithms</li><li>Particle Swarm</li><li>Simulated Annealing</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Full-stack</h4>
+        <ul><li>FastAPI</li><li>Docker</li><li>Hugging Face</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Formal Methods</h4>
+        <ul><li>Lean 3</li></ul>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section class="container">
+    <div class="card" style="flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px;">
+      <div>
+        <p class="eyebrow" style="margin-bottom: 0.3em;">Let's talk</p>
+        <h3 style="margin-bottom: 0;">Have a project, role, or idea in mind?</h3>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
+  <br>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Abood · built with intent</span>
+    <div class="footer-links">
+      <a href="https://github.com/avx20" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:aboodxst@gmail.com">Email</a>
+      <a href="assets/resume_sl.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Abood</title>
+<meta name="description" content="Projects by Abood spanning optimization, computer vision, and applied AI.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <circle cx="13" cy="13" r="2.4" fill="#4F8F72"/>
+        <circle cx="4" cy="6" r="1.6" fill="#5D6FA6" opacity="0.8"/>
+        <circle cx="22" cy="5" r="1.6" fill="#4F8F72" opacity="0.6"/>
+        <circle cx="21" cy="21" r="1.6" fill="#5D6FA6" opacity="0.7"/>
+        <circle cx="3" cy="20" r="1.6" fill="#4F8F72" opacity="0.5"/>
+        <line x1="4" y1="6" x2="13" y2="13" stroke="#4F8F72" stroke-width="0.7" opacity="0.4"/>
+        <line x1="22" y1="5" x2="13" y2="13" stroke="#5D6FA6" stroke-width="0.7" opacity="0.4"/>
+        <line x1="21" y1="21" x2="13" y2="13" stroke="#4F8F72" stroke-width="0.7" opacity="0.4"/>
+        <line x1="3" y1="20" x2="13" y2="13" stroke="#5D6FA6" stroke-width="0.7" opacity="0.4"/>
+      </svg>
+      Abood
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume_sl.pdf" class="nav-cta" target="_blank" rel="noopener">Resume ↓</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container page-head">
+    <p class="eyebrow">Projects</p>
+    <h1>Work, in detail.</h1>
+    <p class="lede">An in-depth look at the systems, algorithms, and applications I have developed.</p>
+  </div>
+
+  <section class="container">
+    <div class="project-full" id="fyp">
+      <div class="project-full-head">
+        <div>
+          <h3>Smart Grid Congestion Mitigation via Particle Swarm Optimization</h3>
+          <div class="project-meta">Final Year Project · July 2026 – Apr 2027 · Supervisor: Dr. Tan Chye Cheah</div>
+        </div>
+        <span class="card-status status-progress">In progress</span>
+      </div>
+      <p>A particle swarm optimization approach to mitigating congestion in smart grid AMI (Advanced Metering Infrastructure) networks during post-outage mass reconnection — the surge of devices all trying to reconnect at once after power is restored.</p>
+      <div class="pill-row">
+        <span class="pill pill-signal">Particle Swarm Optimization</span>
+        <span class="pill pill-signal">Smart Grid / AMI</span>
+        <span class="pill">Python</span>
+      </div>
+    </div>
+
+    <div class="project-full" id="oral-ai">
+      <div class="project-full-head">
+        <div>
+          <h3>Oral AI</h3>
+          <div class="project-meta">COMP2019 Software Engineering Group Project · Presented at university open day</div>
+        </div>
+        <span class="card-status">Completed</span>
+      </div>
+      <p>A multi-model medical computer vision pipeline for oral health analysis, combining ResNet18 and DenseNet169 for classification with YOLOv8 + SAHI for detection, and a retrieval-augmented generation layer for clinical reporting. I worked as the RAG Integration & Clinical Reporting Specialist.</p>
+      <ul class="contrib-list">
+        <li>Built the RAG pipeline on the Gemini API for report generation</li>
+        <li>Built the canvas rendering engine for annotated findings</li>
+        <li>Built the PDF clinical report generator</li>
+        <li>Integrated the Brevo email API for report delivery</li>
+        <li>Produced an individual report and an A1 poster</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill pill-indigo">ResNet18</span>
+        <span class="pill pill-indigo">DenseNet169</span>
+        <span class="pill pill-indigo">YOLOv8 + SAHI</span>
+        <span class="pill pill-indigo">RAG · Gemini API</span>
+      </div>
+    </div>
+
+    <div class="project-full" id="blood-cell">
+      <div class="project-full-head">
+        <div>
+          <h3>Automated Blood Cell Segmentation & Classification</h3>
+          <div class="project-meta">COMP2032 Intro to Image Processing · February 2026</div>
+        </div>
+        <span class="card-status">Completed</span>
+      </div>
+      <p>Semantic Segmentation and Neural Network Classification of Pro-Myelocytes</p>
+      <ul class="contrib-list">
+        <li>Engineered a Python image processing pipeline to automatically segment pro-myelocytes (PMYs) from a 16,000-image medical dataset</li>
+        <li>Applied color space conversions, noise reduction, and advanced thresholding algorithms to generate precise binary masks without requiring manual user intervention</li>
+        <li>Interfaced with a neural network SDK in Google Colab to process the segmented outputs for automated, pixel-wise semantic classification</li>
+        <li>Quantified pipeline accuracy using mIoU, Dice, and Precision metrics, culminating in a 6-page critically evaluated conference paper</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill pill-indigo">Python</span>
+        <span class="pill pill-indigo">Google Colab</span>
+        <span class="pill pill-indigo">Image Processing Algorithms</span>
+        <span class="pill pill-indigo">Neural Network SDKs</span>
+      </div>
+    </div>
+
+    <div class="project-full" id="tetris">
+      <div class="project-full-head">
+        <div>
+          <h3>Tetris (Software Maintenance & Extension)</h3>
+          <div class="project-meta">COMP2042 Developing Maintainable Software · Deployed April 2026</div>
+        </div>
+        <span class="card-status">Completed</span>
+      </div>
+      <p>Extended a Java/JavaFX Tetris game with new mechanics (Laser Drill, Time Rewind) and achieved full JUnit test coverage while refactoring the architecture using MVC design patterns.</p>
+      <ul class="contrib-list">
+        <li>Applied Factory, Observer, and Singleton design patterns</li>
+        <li>Designed all power-ups, combo systems, UI flow accross six screens, and a persistent leaderboard with JSON-backed score storage</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill pill-signal">Java</span>
+        <span class="pill pill-signal">libGDX</span>
+        <span class="pill pill-signal">Game Development</span>
+        <span class="pill">Gradle</span>
+        <span class="pill">JSON</span>
+      </div>
+    </div>
+
+    <div class="project-full" id="ids">
+      <div class="project-full-head">
+        <div>
+          <h3>Metaheuristic Feature Selection for Intrusion Detection</h3>
+          <div class="project-meta">COMP2024 AI Methods · Completed April 2026</div>
+        </div>
+        <span class="card-status">Completed</span>
+      </div>
+      <p>Applied genetic algorithms, particle swarm optimization, and simulated annealing to feature selection for a network intrusion detection system, evaluated on the CICIDS2017 dataset.</p>
+      <ul class="contrib-list">
+        <li>Produced an IEEE-format conference paper with cross-checked results</li>
+        <li>Wrote and recorded a video presentation comparing GA, PSO, and SA for IDS</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill pill-signal">Genetic Algorithm</span>
+        <span class="pill pill-signal">Particle Swarm</span>
+        <span class="pill pill-signal">Simulated Annealing</span>
+        <span class="pill">DEAP</span>
+        <span class="pill">CICIDS2017</span>
+      </div>
+    </div>
+
+
+
+    <div class="project-full" id="m4tch">
+      <div class="project-full-head">
+        <div>
+          <h3>M4TCH - A 4x4 tile matching game inspired by 2Fuse</h3>
+          <div class="project-meta">COMP1023 Software Engineering · Deployed April 2025</div>
+        </div>
+        <span class="card-status">Completed</span>
+      </div>
+      <p>Led the creation of M4TCH, a fast-paced tile-matching desktop game developed in Java using libGDX (LWJGL3) game development framework</p>
+      <ul class="contrib-list">
+        <li>Developed for MacOS and Windows</li>
+        <li>Designed all power-ups, combo systems, UI flow accross six screens, and a persistent leaderboard with JSON-back score storage</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill pill-signal">Java</span>
+        <span class="pill pill-signal">libGDX</span>
+        <span class="pill pill-signal">Game Development</span>
+        <span class="pill">Gradle</span>
+        <span class="pill">JSON</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="card" style="flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px;">
+      <div>
+        <p class="eyebrow" style="margin-bottom: 0.3em;">More</p>
+        <h3 style="margin-bottom: 0;">More on GitHub.</h3>
+      </div>
+      <a href="https://github.com/avx20" class="btn btn-outline" target="_blank" rel="noopener">github.com/avx20</a>
+    </div>
+  </section>
+  <br>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Abood · built with intent</span>
+    <div class="footer-links">
+      <a href="https://github.com/avx20" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:aboodxst@gmail.com">Email</a>
+      <a href="assets/resume_sl.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
